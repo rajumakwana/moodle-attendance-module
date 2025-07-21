@@ -36,3 +36,5 @@ This is a custom Attendance activity module for Moodle. It allows teachers to cr
 
 ---
 This is a basic scaffold. You can extend it with reporting, custom statuses, and more as needed.
+
+this is testing
