@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/attendance/db" VERSION="20250721" COMMENT="Attendance module DB">
+  <TABLE NAME="attendance_sessions" COMMENT="Attendance sessions">
+    <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+    <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true"/>
+    <FIELD NAME="sessiondate" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+  <TABLE NAME="attendance_records" COMMENT="Attendance records">
+    <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+    <FIELD NAME="sessionid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true"/>
+    <FIELD NAME="status" TYPE="char" LENGTH="10" NOTNULL="true"/>
+    <KEYS>
+      <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+    </KEYS>
+  </TABLE>
+</XMLDB>
